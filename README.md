@@ -4,11 +4,11 @@ Before you get started make sure to read through **ALL** requirements and outlin
 
 ### Setup
 
-Server side code for baseline functionality has been provided for you. Each member of your team will need to create a `pizza_parlor` database.
+- [x] Server side code for baseline functionality has been provided for you. Each member of your team will need to create a `pizza_parlor` database.
 
 **Import data**
 
-Right now, the owner enters all of the orders in SQL, but they want any of their employees to be able to enter a new order. The owner has provided some of the server side routes and a way to create their database with (`database.sql`). Your team should build out the following views.
+- [] Right now, the owner enters all of the orders in SQL, but they want any of their employees to be able to enter a new order. The owner has provided some of the server side routes and a way to create their database with (`database.sql`). Your team should build out the following views.
 
 **Start your server**
 
