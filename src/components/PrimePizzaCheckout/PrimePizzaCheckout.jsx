@@ -48,8 +48,3 @@ function PrimePizzaCheckout() {
 
 }
 export default PrimePizzaCheckout;
-
-}
-
-export default PrimePizzaCheckout;
-

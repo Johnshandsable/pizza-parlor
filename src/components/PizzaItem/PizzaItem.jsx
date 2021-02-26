@@ -12,7 +12,7 @@ function PizzaItem({pizza}) {
       // action.payload
       payload: {
         pizzaName: pizza.name, 
-        pizzaDescription: pizza.description,
+        // pizzaDescription: pizza.description,
         pizzaPrice: pizza.price
       }
      

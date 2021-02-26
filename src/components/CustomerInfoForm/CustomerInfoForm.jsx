@@ -16,6 +16,10 @@ function CustomerInfoForm() {
     /*
       SUBMIT TO REDUX - CUSTOMER INFO
     */
+dispatch({
+  type:'ADD_CUSTOMER'
+
+})
   };
 
   return (
