@@ -18,13 +18,13 @@ function PrimePizzaCheckout() {
 
     axios
       .post('/api/order', {
-        customer_name: '',
-        street_address: '',
-        city: '',
-        zip: '',
-        type: '',
-        total: '',
-        pizzas: '',
+        customer_name: customerInfo.name,
+        street_address: customerInfo.address,
+        city: customerInfo.city,
+        zip: customerInfo.zip,
+        type: customerInfo.deliveryOption,
+        total: '9.99',
+        pizzas: orderInfo, // An array of pizzas
       })
       .then((res) => {
         console.log('CLIENT - POST - a response occurred', res);
@@ -36,7 +36,6 @@ function PrimePizzaCheckout() {
 
   return (
     <div>
-      <h3>CHECKOUT FORM</h3>
       <ul>
         {getOrder.map((order) => {
           return <li>order</li>;
