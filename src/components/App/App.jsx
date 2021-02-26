@@ -39,6 +39,7 @@ function App() {
         <Route path="/checkout-form" exact>
           <PrimePizzaCheckout />
         </Route>
+        <Route path="/AdminOrder" />
       </Router>
 
       <img src="images/pizza_photo.png" />

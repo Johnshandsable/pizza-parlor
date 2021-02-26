@@ -20,12 +20,19 @@ const customerInfoReducer = (state = {}, action) => {
   }
   return state;
 };
+const orderList = (state= [], action) => {
+if (action.type ===  'SET_ORDER') {
+return action.payload;
+}
+return state;
+}
 
 // The store is the big JavaScript Object that holds all of the information for our application
 const storeInstance = createStore(
   combineReducers({
     pizzaReducer,
     customerInfoReducer,
+    orderList
   }),
   applyMiddleware(logger)
 );
