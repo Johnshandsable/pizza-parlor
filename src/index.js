@@ -8,8 +8,8 @@ import { Provider } from 'react-redux';
 import logger from 'redux-logger';   // need to install this using |  npm install redux-logger
 
 const pizzaReducer = (state = [], action) => {
-  if (action.type === 'SET_PIZZA_LIST') {
-    return action.payload
+  if (action.type === 'ADD_PIZZA') {
+    return [...state, action.payloa]]
   }
   return state;
 };

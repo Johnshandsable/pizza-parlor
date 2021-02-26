@@ -27,13 +27,13 @@ function PrimePizzaForm() {
 <>
   <h2>HELLO</h2>
 
-  <ul> 
-    {pizzaList.map(pizza => {
-    return <li> {pizza.name} {pizza.description} {pizza.price} </li>
-   })} </ul>
-  </>
-)
+    <ul>
+      {pizzaList.map(pizza => {
+      return <PizzaItem key={i} getPizza={getPizza} pizza={pizza} />  
+      })}
+  </ul>
 
-}
+</>
 
+)}
 export default PrimePizzaForm;
