@@ -38,12 +38,18 @@ function PrimePizzaCheckout() {
     <div>
       <ul>
         {getOrder.map((order) => {
-          return <li>{order}</li>;
+          return <li>order</li>;
         })}
       </ul>
       <button onClick={onSubmit}>Submit Order</button>
     </div>
   );
+
+
+}
+export default PrimePizzaCheckout;
+
 }
 
 export default PrimePizzaCheckout;
+
