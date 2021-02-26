@@ -1,5 +1,6 @@
 import {useEffect, useState} from 'react';
 import axios from 'axios';
+import pizzaItem from '../PizzaItem/PizzaItem.jsx'
 
 function PrimePizzaForm() {
   const [pizzaList, setPizzaList] = useState([]);

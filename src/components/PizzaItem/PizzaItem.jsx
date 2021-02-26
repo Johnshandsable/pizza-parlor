@@ -1,16 +1,23 @@
+import {useDispatch} from 'react-redux';
+
+
 function PizzaItem({pizza}) {
+ const dispatch = useDispatch();
 
-  dispatch({
-    // action.type
-    type: 'ADD_PIZZA' ,
-    // action.payload
-    payload: pizzaReducer{
-      pizzaName,
-      pizzaDescription,
-      pizzaPrice
-    }
-  });
-
+  const addPizza = () => {      
+    
+    dispatch({
+      // action.type
+      type: 'ADD_PIZZA',
+      // action.payload
+      payload: {
+        pizzaName: pizza.name, 
+        pizzaDescription: pizza.description,
+        pizzaPrice: pizza.price
+      }
+     
+    });
+  }
 
 
   return (
@@ -23,10 +30,6 @@ function PizzaItem({pizza}) {
 }
 
 
-const handleSubmit = (event) => {
-  event.preventDefault();
-  addPizza(pizza);
-  clearPizzaFields();
-}
+
 
 export default PizzaItem;
