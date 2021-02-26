@@ -7,9 +7,9 @@ import { createStore, combineReducers, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
 import logger from 'redux-logger';   // need to install this using |  npm install redux-logger
 
-const pizzaList = (state = [], action) => {
-  if(action.type === 'SET_PIZZA_LIST'){
-    action.payload
+const pizzaReducer = (state = [], action) => {
+  if (action.type === 'ADD_PIZZA') {
+    return [...state, action.payload]
   }
   return state;
 };
@@ -17,11 +17,16 @@ const pizzaList = (state = [], action) => {
 // The store is the big JavaScript Object that holds all of the information for our application
 const storeInstance = createStore(
   combineReducers({
-    pizzaList, // pizzaList: pizzaList
+    pizzaReducer,
   }),
   applyMiddleware(logger)
 );
 
 
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(
+<Provider store={storeInstance}>
+  <App />
+</Provider>, 
+document.getElementById('root')
+);
