@@ -11,7 +11,6 @@ function CustomerInfoForm() {
   const dispatch = useDispatch();
 
   const storeCustomerInfo = (evt) => {
-    evt.preventDefault();
     console.log('storeCustomerInfo()');
     /*
       SUBMIT TO REDUX - CUSTOMER INFO
@@ -59,7 +58,7 @@ function CustomerInfoForm() {
             setDeliveryOption('delivery');
           }}
         />
-        <label for="delivery">Delivery</label>
+        <label htmlFor="delivery">Delivery</label>
         <input
           type="radio"
           id="pickup"
@@ -69,7 +68,7 @@ function CustomerInfoForm() {
             setDeliveryOption('pickup');
           }}
         />
-        <label for="pickup">Pickup</label>
+        <label htmlFor="pickup">Pickup</label>
         <button>Submit Customer Info</button>
       </form>
     </div>
