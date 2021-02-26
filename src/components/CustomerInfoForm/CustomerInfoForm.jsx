@@ -11,13 +11,21 @@ function CustomerInfoForm() {
   const dispatch = useDispatch();
 
   const storeCustomerInfo = (evt) => {
+    evt.preventDefault();
     console.log('storeCustomerInfo()');
     /*
       SUBMIT TO REDUX - CUSTOMER INFO
     */
+const customer ={
+name ,  // | in this spot if the variables and the names match we are able to just use the key.
+address: address, // we chose to do it this way so that we know what is being sent to the reducer
+city: city,
+zip: zip,
+deliveryOption: deliveryOption,
+}
 dispatch({
-  type:'ADD_CUSTOMER'
-
+  type:'ADD_CUSTOMER_INFO',
+payload: customer
 })
   };
 
