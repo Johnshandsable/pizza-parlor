@@ -3,9 +3,11 @@ function PizzaItem({pizza}) {
   dispatch({
     // action.type
     type: 'ADD_PIZZA' ,
-    // action.paylod
+    // action.payload
     payload: pizzaReducer{
-      pizza
+      pizzaName,
+      pizzaDescription,
+      pizzaPrice
     }
   });
 

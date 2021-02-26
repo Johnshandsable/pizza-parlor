@@ -9,7 +9,7 @@ import logger from 'redux-logger';   // need to install this using |  npm instal
 
 const pizzaReducer = (state = [], action) => {
   if (action.type === 'ADD_PIZZA') {
-    return [...state, action.payloa]]
+    return [...state, action.payload]
   }
   return state;
 };
