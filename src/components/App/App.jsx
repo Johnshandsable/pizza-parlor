@@ -30,13 +30,13 @@ function App() {
             </li>
           </ul>
         </nav>
-        <Route path="/prime-pizza-form">
+        <Route path="/prime-pizza-form" exact>
           <PrimePizzaForm />
         </Route>
-        <Route path="/customer-info-form">
+        <Route path="/customer-info-form" exact>
           <CustomerInfoForm />
         </Route>
-        <Route path="/prime-pizza-checkout">
+        <Route path="/checkout-form" exact>
           <PrimePizzaCheckout />
         </Route>
       </Router>
