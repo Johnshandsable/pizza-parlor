@@ -15,6 +15,9 @@ const pizzaReducer = (state = [], action) => {
 };
 
 const customerInfoReducer = (state = {}, action) => {
+  if (action.type === 'ADD_CUSTOMER_INFO') {
+    return action.payload;
+  }
   return state;
 };
 
