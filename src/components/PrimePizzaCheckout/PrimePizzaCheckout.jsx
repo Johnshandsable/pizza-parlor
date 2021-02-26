@@ -36,6 +36,7 @@ function PrimePizzaCheckout() {
 
   return (
     <div>
+      <h3>CHECKOUT FORM</h3>
       <ul>
         {getOrder.map((order) => {
           return <li>order</li>;
@@ -44,7 +45,6 @@ function PrimePizzaCheckout() {
       <button onClick={onSubmit}>Submit Order</button>
     </div>
   );
-
-
 }
+
 export default PrimePizzaCheckout;
