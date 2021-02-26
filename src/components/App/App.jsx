@@ -25,6 +25,9 @@ function App() {
             <li>
               <Link to="/customer-info-form">CUSTOMER INFO FORM</Link>
             </li>
+            <li>
+              <Link to="/checkout-form">CHECKOUT FORM</Link>
+            </li>
           </ul>
         </nav>
         <Route path="/prime-pizza-form">
